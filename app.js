@@ -1,3 +1,5 @@
+// Enter your partners name here
+var name = "Sasha";
 var brd = document.createElement("DIV");
 document.body.insertBefore(brd, document.getElementById("board"));
 const duration = 3000;
@@ -5,6 +7,7 @@ const speed = 0.5;
 const cursorXOffset = 0;
 const cursorYOffset = -5;
 var hearts = [];
+
 
 function generateHeart(x, y, xBound, xStart, scale) {
     var heart = document.createElement("DIV");
@@ -80,7 +83,7 @@ function toggleGif() {
         title.textContent = "With every click, my love for you grows stronger. I love you!";
     } else {
         if (firstTime) {
-           title.textContent = "Sasha, will you be my valentine?" ;
+           title.textContent = `${name}, will you be my valentine?`;
         } else {
             title.textContent = "No backsies!";
         }
